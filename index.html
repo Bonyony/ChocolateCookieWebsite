@@ -9,20 +9,13 @@
 <body>
     <main>
         <header id="main-header">
-        <div class="blurb">
-            <p>Chocolate Cookie is a musical project by Frank Francione.
-                First and foremost, Chocolate Cookie is for everybody, then for you and I.
-            </p>
-        </div>
             <nav class="site-top">
                 <div class="structural">
                     <div class="inner">
-                        <!-- The h3 class will link to spotify-->
-                        <h3 class="look">Take a look baby</h3>
                         <ul class="head-links">
-                            <li>The Music</li>
-                            <li>The Artwork</li>
-                            <li>Contact My Team</li>
+                            <li><a href="#music">Music</a></li>
+                            <li><a href="#artwork">Artwork</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
                         </ul>
                     </div>
                 </div> 
@@ -30,25 +23,131 @@
         
         </header>
         <h1>CHOCOLATE COOKIE</h1>
-        <div class="music-div">
-            <h2 class="music-head">New Music By Chocolate Cookie</h2>
+
+        <div class="seperator"></div>
+
+        <div id="music" class="music-div">
+            <h2 class="music-head">New Music</h2>
+            <div class="music-container">
+                <h3>Latest Release</h3>
+                    <div class="music-players">
+                        <iframe 
+                            class="spotify-player"
+                            style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/track/0OF87LawzBTtFgeHpMwSY9?utm_source=generator" 
+                            width="75%" 
+                            height="250" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                <h2 class="music-head">Listen On</h2>
+                    <div class="music-links">
+                        <a href="https://open.spotify.com/artist/0pLxOUNYTCkZPRVpwgT4Mq" target="_blank">
+                        <img src="https://img.logo.dev/spotify.com?token=pk_NTiI4ZmcTYKdbRhY8KJS8w" />
+                        <h2 class="music-sites">Spotify</h3></a>
+                        
+                        <a href="https://music.apple.com/us/artist/chocolate-cookie/1742902600" target="_blank">
+                        <img src="https://img.logo.dev/apple.com?token=pk_NTiI4ZmcTYKdbRhY8KJS8w" />
+                        <h2 class="music-sites">Apple Music</h3></a>
+                            
+                        <a href="https://chocolatecookie.bandcamp.com/track/looking-glass" target="_blank">
+                        <img src="https://img.logo.dev/bandcamp.com?token=pk_NTiI4ZmcTYKdbRhY8KJS8w" />
+                        <h2 class="music-sites">Bandcamp</h3></a>
+
+                    </div>
+                <h2 class="music-head">Upcoming Releases</h2>
+            </div>
         </div>
-        <div class="artwork-div">
+
+        <div class="seperator"></div>
+
+        <div id="artwork" class="artwork-div">
             <h2 class="art-head">Artwork</h2>
+            <div class="artwork-container">
+                
+                <div class="slides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="ChocCookieArtworks/PXL_20240416_173313282.jpeg" style="width:100%">
+                    <div class="text">Looking Glass: The first release by Chocolate Cookie</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="ChocCookieArtworks/PXL_20240416_213438727.jpeg" style="width:100%">
+                    <div class="text">My self portrait</div>
+                </div>
+
+                <div class="slides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="ChocCookieArtworks/PXL_20240416_211855277.jpeg" style="width:100%">
+                    <div class="text">Pool of Radiance</div>
+                </div>
+
+                
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
         </div>
-        <div class="contact-div">
-            <h2 class="contact-head">Contact Us</h2>
+
+        <div class="seperator"></div>
+
+        <div id="contact" class="contact-div">
+            
+            <div class="contact-form-container">
+                <h2 class="contact-head">Contact Me</h2>
+                <form>
+                    <label for="name">Your Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Please enter your name..."
+                        />
+                
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Please enter your email address..."
+                        />
+                
+                    <label for="subject">Subject</label>
+                    <textarea 
+                        id="subject" 
+                        name="subject" 
+                        placeholder="Write something..." 
+                        style="height:200px">
+                    </textarea>
+                
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
     </main>
+    <div class="seperator"></div>
     <footer>
         <h3 class="logo">Chocolate Cookie Band</h3>
-        <div class="contact">
-            <p></p>
+        <div class="socials-div">
             <ul class="socials">
                 <li><a href="https://www.instagram.com/chocolatecookieband/" target="_blank">Instagram</a></li>
                 <li><a href="https://x.com/choccookiemusic/" target="_blank">Twitter / X</a></li>
                 <!-- Facebook is a placeholder with my personal account until I make a professional one for Choc Cookie -->
                 <li><a href="https://www.facebook.com/frankie.francione" target="_blank">Facebook</a></li>
+                <li><a href="https://chocolatecookie.bandcamp.com/track/looking-glass" target="_blank">Bandcamp</a></li>
             </ul>
         </div>
     </footer>
