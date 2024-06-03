@@ -1,0 +1,112 @@
+
+/* Global Stuff */
+*,
+::before,
+::after {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-color: #FFFAF0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --color1: #D3D3D3;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 15px 20px 15px 20px;
+  }
+
+
+.blurb {
+    width: 40%;
+}
+
+p {
+    background-color: var(--color1);
+    border-radius: 5px;
+}
+
+.site-top {
+    
+}
+
+.look {
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    justify-content: right;
+}
+
+.head-links {
+    display: flex;
+    list-style: none;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.head-links li {
+    width: 125px;
+}
+
+
+/* Music Section */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 8vw;
+}
+
+.music-head {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+/* Artwork Section */
+.art-head {
+    display: flex;
+    justify-content: right;
+    margin-right: 300px;
+    font-size: 4vw;
+}
+
+/* Contact Section */
+.contact-head {
+    display: flex;
+    justify-content: left;
+    margin-left: 300px;
+    font-size: 4vw;
+}
+
+/* Footer */
+
+.logo {
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+    align-content: space-between;
+}
+
+li > a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 12px 0 12px;
+}
+
+/* Animation Stuff */  
